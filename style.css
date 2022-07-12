@@ -1,0 +1,111 @@
+:root{
+    --cor1: #F53105;
+    --cor2: #E04B0D;
+    --cor3: #FA6D08;
+    --cor4: #F56418;
+    --cor5: #00457A;
+
+}
+
+body{
+    background-color: #302e2e;
+
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+    color: white;
+    margin: 15px;
+    border: 10px;
+    padding: 10px;
+}
+
+header > h1 {
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.541);
+    font-size: 5em;
+}
+
+header > p {
+    text-align: center;
+    margin: 5px;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.589);
+}
+
+.menu ul{
+    list-style-type: none;
+    padding: 10px;
+    margin: 15px;
+    background-color: var(--cor4);
+    display: block;
+    
+
+}
+
+.menu ul li{
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+   
+    text-align: center;
+}
+
+.menu ul li:hover a{
+    background-color: var(--cor4);
+    color: #fff;
+}
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+    width: 80px;
+    height: 102px;
+    top: 10px;
+
+    
+   
+}
+
+.menu ul li:hover ul {
+    display: block;
+    
+}
+.menu ul ul li a {
+    padding: 5px;
+    display: block;
+    padding: 5px;
+    
+ }
+
+
+
+.mrnu ul li a{
+    
+}
+
+/*artigo*/
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+  
+}
+
+img{
+    margin: 10px;
+}
+ li p {
+    color: #fff;
+}
