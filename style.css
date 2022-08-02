@@ -7,65 +7,110 @@
 
 }
 
-body{
-    background-color: #302e2e;
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
+.container{
+    width: 100%;
+    height: 50px;
+    background-color: #302e2e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu{
+    color: #fff;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list-1{
+    display: flex;
+    align-items: center;
 }
 
 .menu ul{
-    list-style-type: none;
-    background-color: var(--cor4);
-    display: block;
-    
-
+    display: flex;
+    list-style: none;
 }
 
 .menu ul li{
-    display: inline-block;
-    list-style-type: none;
-    position: relative;
+    margin: 1em;
 }
 
 .menu ul li a{
     text-decoration: none;
-    padding: 10px;
-    color: #fff;
-   
-    text-align: center;
+    padding: 0.2em 1.2em 0.9em 1.2em;
+    border-radius: 10px 10px 0 0;
+    color: #FA6D08;
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
 }
 
-.menu ul li:hover a{
-    background-color: var(--cor4);
-    color: #fff;
-}
-
-.menu ul ul{
-    display: none;
+.menu ul li a::before{
+    content: '';
     position: absolute;
-    width: 80px;
-    height: 102px;
-    top: 10px;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    border-radius: 10px 10px 0 0;
+    background-color: #F53105;
+    transform-origin: bottom;
+    transform: scaleY(0.05);
+    z-index: -1;
+    transition: all .4s;
 
-    
-   
 }
 
-.menu ul li:hover ul {
-    display: block;
-    
+.menu ul li a:hover::before{
+    transform: scaleY(1.1);
 }
-.menu ul ul li a {
-    padding: 5px;
-    display: block;
-    padding: 5px;
-    
- }
 
-
-
-.mrnu ul li a{
-    
+.menu ul li a:hover{
+    color: #fff;
 }
+
+body{
+    background-color: #302e2e;
+
+}
+.container{
+    background-color: rgb(37, 34, 34);
+    padding: 20px;
+    margin: 20px;
+}
+.menu{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn{
+    position: relative;
+    width: 23px;
+    height: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    display: none;
+}
+
+.btn::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+@media{
+    max-width: 1200px;
+}
+
 
 /*artigo*/
 
